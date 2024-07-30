@@ -1,0 +1,57 @@
+.table {
+    width: 100%;
+    height: auto;
+    transition: display 0.2s ease;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__tr {
+        text-align: center;
+
+        &--number {
+            height: 50px;
+            font-weight: 700;
+        }
+    }
+
+    &__th {
+        width: 12.5%;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+
+        &:first-child {
+            width: 7%;
+        }
+    }
+
+    &__td {
+        padding-block: 10px;
+        padding-inline: 5px;
+        line-height: 1.2;
+        border: 1px solid transparent;
+        background-color: var(--color-light);
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+        @include mobile {
+            font-size: 12px;
+        }
+        
+        &--no-active {
+            background-color: var(--color-green);
+        }
+
+        & span {
+            display: inline-block;
+            padding-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="eeb0a5f0a1fff6e1" />
+    <title>Wake Volga</title>
+    <meta name="description"
+        content="Мы команда Вейк Волга Саратова с.Шумейка с диким желанием научить вас вейксерфингу за катером">
+    <meta name="keywords" content="wake, volga, saratov, саратов, шумейка, вейк, вэйк, волга, серф, серфинг">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+
+    <link rel="icon" href="./images/favicon.ico" sizes="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="#!" class="header__logo">
+                <img src="./images/header-logo.png" alt="wake volga" class="header__logo-image" width="250" height="40">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#section1" class="header__menu-link">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#section2" class="header__menu-link">График каталки</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#section3" class="header__menu-link">Цены и сертификаты</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#section4" class="header__menu-link">Наши контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="button__burger-menu burger-button visible-mobile" type="button">
+                <span class="visually-hidden">open navigation menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container">
+            <div class="section__body">
+                <div class="intro">
+                    <div class="intro__body">
+                        <h1 class="intro__title visually-hidden">Вейк волга Саратов Шумейка</h1>
+                        <img src="./images/logo.jpg" alt="Logotip" class="intro__logo" width="400" height="400"
+                            loading="lazy">
+                        <h2 class="intro__slogan text-shadow">Поймай свою волну</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section1" class="section container">
+            <div class="section__header">
+                <h2 class="section__title">О нас</h2>
+                <div class="section__text">Мы команда Wake Volga с диким желанием научить вас вейк&shy;серфингу за
+                    катером.
+                    Пред&shy;лагаем вам рас&shy;шатать серф Волгу и поймать Свою счастливую волну! Если кто-то уже
+                    знаком с
+                    серфом, то здесь слов не нужно. А если вы только новичок, то от вас потребуется хорошее
+                    наст&shy;рое&shy;ние и
+                    плавки с купальником, а от нас - забронированное время под ваш сет, жилеты, доски в зависимости от
+                    весовой категории, инструктор и специализи&shy;рованный катер. Фишка нашей команды заклю&shy;чается
+                    в
+                    продол&shy;жительности сета. Обычно сет длится 15 минут, но по нашей статистике - в среднем новичок
+                    встает на 18 минуте. И поэтому мы делаем акцент, что наш сет - длится 18 минут, так как для нас
+                    важно чтобы райдер понял кайф, а не мечтал о нем!</div>
+            </div>
+            <div class="section__body">
+                <div class="about-us">
+                    <div class="about-us__gallery gallery">
+                        <h3 class="gallery__title title-sm">Фотогалерея</h3>
+                        <div class="gallery__body">
+                            <a href="/gallery.html" class="gallery__button">Перейти в галерею</a>
+                            <ul class="gallery__list">
+                                <li class="gallery__item gallery__item-show">
+                                    <img src="./images/gallery/22.jpg" alt="" class="gallery__image" loading="lazy">
+                                </li>
+                                <li class="gallery__item gallery__item-show">
+                                    <img src="./images/gallery/12.jpg" alt="" class="gallery__image" loading="lazy">
+                                </li>
+                                <li class="gallery__item gallery__item-show">
+                                    <img src="./images/gallery/20.jpg" alt="" class="gallery__image" loading="lazy">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-us__reviews reviews">
+                        <h3 class="reviews__title title-sm">Отзывы</h3>
+                        <div class="reviews__body">
+                            <button id="left" class="reviews__arrow-button" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                    <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+                                </svg>
+                            </button>
+                            <ul class="reviews__list">
+                                <li class="reviews__item">
+                                    <img src="./images/body-bg.jpg" alt="name" class="reviews__image" draggable="false">
+                                    <div class=" reviews__name">Дмитрий</div>
+                                    <div class="reviews__description">Отличные ребята! Был удивлен, что так много
+                                        оборудования на борту (серф, вейк, жилеты, перчатки). Всё дали, зарядили
+                                        позитивом и покатали! Спасибо Ольге за классные фото на фоне заката! Однозначно
+                                        рекомендую!</div>
+                                </li>
+                                <li class="reviews__item">
+                                    <img src="./images/body-bg.jpg" alt="name" class="reviews__image" draggable="false">
+                                    <div class=" reviews__name">Евгений</div>
+                                    <div class="reviews__description">Поставили 11 летнего сына за первые. 30 минут, все
+                                        четко, ребята опытные и понятно все объясняют.</div>
+                                </li>
+                                <li class="reviews__item">
+                                    <img src="./images/body-bg.jpg" alt="name" class="reviews__image" draggable="false">
+                                    <div class=" reviews__name">Екатерина</div>
+                                    <div class="reviews__description">Ребята, вы очень классные! Дочь осталась в
+                                        восторге! Спасибо огромное за великолепные эмоции &#128151;</div>
+                                </li>
+                                <li class="reviews__item">
+                                    <img src="./images/body-bg.jpg" alt="name" class="reviews__image" draggable="false">
+                                    <div class=" reviews__name">Роман</div>
+                                    <div class="reviews__description">Отличная команда - поставили на доску 10 летнего
+                                        ребенка. Рекомендую &#128077;</div>
+                                </li>
+                                <li class="reviews__item">
+                                    <img src="./images/body-bg.jpg" alt="name" class="reviews__image" draggable="false">
+                                    <div class=" reviews__name">Александр</div>
+                                    <div class="reviews__description">Грамотные ребята! Все доступно объясняют и
+                                        показывают. 100% поставят на доску! Успехов!</div>
+                                </li>
+                            </ul>
+                            <button id="right" class="reviews__arrow-button" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                    <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="reviews__text">Больше отзывов можно посмотреть <a class="schedule__link"
+                                href="https://www.avito.ru/user/ec270acdf965e2a005c55f2efbfe3066/profile?src=sharing"
+                                target="_blank"><span class="text-bold">тут</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="section container">
+            <div class="section__header">
+                <h2 class="section__title">График каталки</h2>
+            </div>
+            <div class="section__body">
+                <div class="schedule">
+                    <div class="schedule__text">
+                        Расписание работы и запись на каталку вы можете посмотреть перейдя по
+                        этой
+                        <a class="schedule__link"
+                            href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN-DurxtT3CSZzSahEYq1cskBVbWnhgZOMJWX2pIY9Ir9hJqRyTf4KoHKbrIHD-cXunnGteY6hItcx/pubhtml?gid=0&single=true"
+                            target="_blank"><span class="text-bold">ссылке</span></a>
+                    </div>
+                    <button class="button schedule__button">Посмотреть график</button>
+                    <iframe class="schedule__table visually-hidden"
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN-DurxtT3CSZzSahEYq1cskBVbWnhgZOMJWX2pIY9Ir9hJqRyTf4KoHKbrIHD-cXunnGteY6hItcx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="section container">
+            <div class="section__header">
+                <h2 class="section__title">Цены и сертификаты</h2>
+            </div>
+            <div class="section__body">
+                <div class="price">
+                    <ul class="price__list">
+                        <li class="price__item">
+                            <div class="price__card">
+                                <h3 class="price__title visually-hidden">Малая волна</h3>
+                                <div class="price__description">Катер <span class="text-bold">Malibu</span> 1 сет 18
+                                    минут</div>
+                                <div class="price__cost">Стоимость: <span class="text-bold">2&nbsp;700&nbsp;₽</span>
+                                </div>
+
+                                <div class="price__service">
+                                    <div class="price__service-title">В услугу входит:</div>
+                                    <ul class="price__service-list">
+                                        <li class="price__service-item">время с инструктором</li>
+                                        <li class="price__service-item">неопреоновые жилеты</li>
+                                        <li class="price__service-item">гидрокостюмы</li>
+                                        <li class="price__service-item">доски под любую весовую категорию</li>
+                                        <li class="price__service-item">подключение к колонкам со своей музыкой</li>
+                                    </ul>
+                                </div>
+                                <div class="price__over">
+                                    Возможность хранения клиентских досок:&nbsp;&nbsp;<span
+                                        class="text-bold">3&nbsp;000&nbsp;₽</span>
+                                </div>
+                            </div>
+                            <div class="price__block">
+                                <img src="./images/equipments/01.jpg" alt="" class="price__image">
+                            </div>
+                        </li>
+                        <li class="price__item">
+                            <div class="price__card">
+                                <h3 class="price__title visually-hidden">Большая волна</h3>
+                                <div class="price__description">Катер <span class="text-bold">Tige</span> 1 сет 18 минут
+                                </div>
+                                <div class="price__cost">Стоимость: <span class="text-bold">3&nbsp;300&nbsp;₽</span>
+                                </div>
+
+                                <div class="price__service">
+                                    <div class="price__service-title">В услугу входит:</div>
+                                    <ul class="price__service-list">
+                                        <li class="price__service-item">время с инструктором</li>
+                                        <li class="price__service-item">неопреоновые жилеты</li>
+                                        <li class="price__service-item">гидрокостюмы</li>
+                                        <li class="price__service-item">доски под любую весовую категорию</li>
+                                        <li class="price__service-item">подключение к колонкам со своей музыкой</li>
+                                    </ul>
+                                </div>
+                                <div class="price__over">
+                                    Возможность хранения клиентских досок:&nbsp;&nbsp;<span
+                                        class="text-bold">3&nbsp;000&nbsp;₽</span>
+                                </div>
+                            </div>
+                            <div class="price__block">
+                                <img src="./images/equipments/02.jpg" alt="" class="price__image">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="price__inventory">
+                        <h3 class="price__inventory-title title-m">В каждую услугу входит</h3>
+                        <ul class="price__inventory-list">
+                            <li class="price__inventory-item">время с инструктором</li>
+                            <li class="price__inventory-item">неопреоновые жилеты</li>
+                            <li class="price__inventory-item">гидрокостюмы</li>
+                            <li class="price__inventory-item">доски под любую весовую категорию</li>
+                            <li class="price__inventory-item">подключение к колонкам со своей музыкой</li>
+                            <li class="price__inventory-item">Возможность хранения клиентских досок:&nbsp;&nbsp;<span
+                                    class="text-bold">3&nbsp;000&nbsp;₽</span></li>
+                        </ul>
+                    </div>
+                    <div class="price__abonement">
+                        <h3 class="price__abonement-title title-m">Абонементы</h3>
+                        <!-- <ul class="price__abonement-list">
+                            <li class="price__abonement-item">Malibu 10 сетов - cтоимость: <span
+                                    class="text-bold">24&nbsp;300&nbsp;₽</span></li>
+                            <li class="price__abonement-item">Tige 10 сетов - cтоимость: <span
+                                    class="text-bold">28&nbsp;800&nbsp;₽</span></li>
+                            <ul>
+                                <li class="price__abonement-item">абонементы действуют в будние дни</li>
+                                <li class="price__abonement-item">в абонемент входит услуга инструктора</li>
+                                <li class="price__abonement-item">в абонемент входит услуга хранения клиентских досок
+                                </li>
+                            </ul>
+                        </ul> -->
+                        <div class="price__abonement-wrapper">
+                            <div class="price__abonement-inner">
+                                <ul class="price__abonement-list">
+                                    <li class="price__abonement-item">Malibu 10 сетов - cтоимость: <span
+                                            class="text-bold">24&nbsp;300&nbsp;₽</span></li>
+                                    <li class="price__abonement-item">Tige&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 сетов -
+                                        cтоимость: <span class="text-bold">28&nbsp;800&nbsp;₽</span></li>
+                                </ul>
+                            </div>
+                            <div class="price__abonement-inner">
+                                <ul class="price__abonement-list price__abonement-list--style">
+                                    <li class="price__abonement-item">абонементы действуют в будние дни</li>
+                                    <li class="price__abonement-item">в абонемент входит услуга инструктора</li>
+                                    <li class="price__abonement-item">в абонемент входит услуга хранения клиентских
+                                        досок
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="section container">
+            <div class="section__header">
+                <h2 class="section__title">Наши контакты</h2>
+            </div>
+            <div class="section__body">
+                <div class="location">
+                    <div class="location__description">
+                        <p>Мы располагаемся в с. Шумейка, на берегу базы отдыха Покровская слобода</p>
+                    </div>
+                    <div id="myMap" class="location__map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__soc1als soc1als">
+            <h2 class="soc1als__text visually-hidden">Контактные данные</h2>
+            <div class="soc1als__text">
+                Связаться с нами
+                <br /><a class="soc1als__phone" href="tel:79297788003">8-929-77-88-003</a></span>
+            </div>
+            <ul class="soc1als__list">
+                <li class="soc1als__item">
+                    <a href="https://wa.me/79297788003" class="soc1als__link soc1als__link--whatsapp" target="_blank">
+                        <span class="visually-hidden">Whatsapp</span>
+
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                                fill="#0F0F0F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                                fill="#0F0F0F" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="https://skobelkin.ru/viber/79297788003" class="soc1als__link soc1als__link--viber"
+                        target="_blank">
+                        <span class="visually-hidden">Viber</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13 4C12.4477 4 12 4.44772 12 5C12 5.55228 12.4477 6 13 6C14.2728 6 15.2557 6.41989 15.9179 7.08211C16.5801 7.74433 17 8.72725 17 10C17 10.5523 17.4477 11 18 11C18.5523 11 19 10.5523 19 10C19 8.27275 18.4199 6.75567 17.3321 5.66789C16.2443 4.58011 14.7272 4 13 4Z"
+                                fill="#0F0F0F" />
+                            <path
+                                d="M5.014 8.00613C5.12827 7.1024 6.30277 5.87414 7.23488 6.01043L7.23339 6.00894C8.01251 6.15699 8.65217 7.32965 9.07373 8.10246C9.14298 8.22942 9.20635 8.34559 9.26349 8.44465C9.55041 8.95402 9.3641 9.4701 9.09655 9.68787C9.06561 9.7128 9.03317 9.73855 8.9998 9.76504C8.64376 10.0477 8.18114 10.4149 8.28943 10.7834C8.5 11.5 11 14 12.2296 14.7107C12.6061 14.9283 12.8988 14.5057 13.1495 14.1438C13.2087 14.0583 13.2656 13.9762 13.3207 13.9067C13.5301 13.6271 14.0466 13.46 14.5548 13.736C15.3138 14.178 16.0288 14.6917 16.69 15.27C17.0202 15.546 17.0977 15.9539 16.8689 16.385C16.4659 17.1443 15.3003 18.1456 14.4542 17.9421C12.9764 17.5868 7 15.27 5.08033 8.55801C4.97981 8.26236 4.99645 8.13792 5.01088 8.02991L5.014 8.00613Z"
+                                fill="#0F0F0F" />
+                            <path
+                                d="M13 7C12.4477 7 12 7.44772 12 8C12 8.55228 12.4477 9 13 9C13.1748 9 13.4332 9.09745 13.6679 9.33211C13.9025 9.56676 14 9.82523 14 10C14 10.5523 14.4477 11 15 11C15.5523 11 16 10.5523 16 10C16 9.17477 15.5975 8.43324 15.0821 7.91789C14.5668 7.40255 13.8252 7 13 7Z"
+                                fill="#0F0F0F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.51742 23.8312C7.54587 23.8469 7.57508 23.8612 7.60492 23.874C8.14762 24.1074 8.81755 23.5863 10.1574 22.5442L11.5 21.5C14.1884 21.589 16.514 21.2362 18.312 20.6071C20.3227 19.9035 21.9036 18.3226 22.6072 16.3119C23.5768 13.541 23.5768 8.45883 22.6072 5.68794C21.9036 3.67722 20.3227 2.0963 18.312 1.39271C15.1103 0.272407 8.82999 0.293306 5.68806 1.39271C3.67733 2.0963 2.09642 3.67722 1.39283 5.68794C0.423255 8.45883 0.423255 13.541 1.39283 16.3119C2.09642 18.3226 3.67733 19.9035 5.68806 20.6071C6.08252 20.7451 6.52371 20.8965 7 21C7 22.6974 7 23.5461 7.51742 23.8312ZM9 20.9107V19.7909C9 19.5557 8.836 19.3524 8.60597 19.3032C7.84407 19.1403 7.08676 18.9776 6.34862 18.7193C4.91238 18.2168 3.78316 17.0875 3.2806 15.6513C2.89871 14.5599 2.66565 12.8453 2.66565 10.9999C2.66565 9.15453 2.89871 7.43987 3.2806 6.3485C3.78316 4.91227 4.91238 3.78304 6.34862 3.28048C7.61625 2.83692 9.71713 2.56282 11.9798 2.56032C14.2422 2.55782 16.3561 2.82723 17.6514 3.28048C19.0876 3.78304 20.2169 4.91227 20.7194 6.3485C21.1013 7.43987 21.3344 9.15453 21.3344 10.9999C21.3344 12.8453 21.1013 14.5599 20.7194 15.6513C20.2169 17.0875 19.0876 18.2168 17.6514 18.7193C15.5197 19.4652 13.259 19.549 11.0239 19.4828C10.9071 19.4794 10.7926 19.5165 10.7004 19.5882L9 20.9107Z"
+                                fill="#0F0F0F" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="https://t.me/wakevolga" class="soc1als__link soc1als__link--telegram" target="_blank">
+                        <span class="visually-hidden">Telegram</span>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                                fill="#0F0F0F" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="https://vk.com/club221489530" class="soc1als__link soc1als__link--vk"
+                        target="_blank">
+                        <span class="visually-hidden">Vk</span>
+                        <svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#000000"
+                                d="M25.217 22.402h-2.179c-0.825 0-1.080-0.656-2.562-2.158-1.291-1.25-1.862-1.418-2.179-1.418-0.445 0-0.572 0.127-0.572 0.741v1.968c0 0.53-0.169 0.847-1.566 0.847-2.818-0.189-5.24-1.726-6.646-3.966l-0.021-0.035c-1.632-2.027-2.835-4.47-3.43-7.142l-0.022-0.117c0-0.317 0.127-0.614 0.741-0.614h2.179c0.55 0 0.762 0.254 0.975 0.846 1.078 3.112 2.878 5.842 3.619 5.842 0.275 0 0.402-0.127 0.402-0.825v-3.219c-0.085-1.482-0.868-1.608-0.868-2.137 0.009-0.283 0.241-0.509 0.525-0.509 0.009 0 0.017 0 0.026 0.001l-0.001-0h3.429c0.466 0 0.635 0.254 0.635 0.804v4.34c0 0.465 0.212 0.635 0.339 0.635 0.275 0 0.509-0.17 1.016-0.677 1.054-1.287 1.955-2.759 2.642-4.346l0.046-0.12c0.145-0.363 0.493-0.615 0.9-0.615 0.019 0 0.037 0.001 0.056 0.002l-0.003-0h2.179c0.656 0 0.805 0.337 0.656 0.804-0.874 1.925-1.856 3.579-2.994 5.111l0.052-0.074c-0.232 0.381-0.317 0.55 0 0.975 0.232 0.317 0.995 0.973 1.503 1.566 0.735 0.727 1.351 1.573 1.816 2.507l0.025 0.055c0.212 0.612-0.106 0.93-0.72 0.93zM20.604 1.004h-9.207c-8.403 0-10.392 1.989-10.392 10.392v9.207c0 8.403 1.989 10.392 10.392 10.392h9.207c8.403 0 10.392-1.989 10.392-10.392v-9.207c0-8.403-2.011-10.392-10.392-10.392z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <div class="mobile-overlay__list">
+                <div class="mobile-overlay__item">
+                    <a href="#section1" class="mobile-overlay__link">О нас</a>
+                </div>
+                <div class="mobile-overlay__item">
+                    <a href="https://www.avito.ru/user/ec270acdf965e2a005c55f2efbfe3066/profile?src=sharing"
+                        class="mobile-overlay__link" target="_blank">Отзывы</a>
+                </div>
+                <div class="mobile-overlay__item">
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN-DurxtT3CSZzSahEYq1cskBVbWnhgZOMJWX2pIY9Ir9hJqRyTf4KoHKbrIHD-cXunnGteY6hItcx/pubhtml?gid=0&single=true"
+                        class="mobile-overlay__link" target="_blank">График каталки</a>
+                </div>
+                <div class="mobile-overlay__item">
+                    <a href="/gallery.html" class="mobile-overlay__link">Галерея</a>
+                </div>
+                <div class="mobile-overlay__item">
+                    <a href="#section3" class="mobile-overlay__link">Цены и сертификаты</a>
+                </div>
+                <div class="mobile-overlay__item">
+                    <a href="#section4" class="mobile-overlay__link">Наши контакты</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

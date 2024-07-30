@@ -1,0 +1,26 @@
+.intro {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+        text-align: center;
+
+        @include mobile {
+            row-gap: 30px;
+        }
+    }
+
+    &__logo {
+        border-radius: 50%;
+
+        @include mobile {
+            height: auto;
+        }
+    }
+
+    &__slogan {
+        font-family: var(--font-family-slogan);
+        font-weight: 700;
+    }
+}

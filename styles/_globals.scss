@@ -1,0 +1,56 @@
+body {
+    @include fluid-text(18, 16);
+
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    line-height: 1.28;
+    color: var(--color-dark);
+
+    background-image: linear-gradient(0deg, rgba(158,148,194,1) 45%, rgba(238,124,88,1) 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--color-bg);
+}
+
+a,
+button,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    font-family: var(--font-family-title);
+}
+
+h1 {
+    @include fluid-text(60, 43);
+}
+
+h2 {
+    @include fluid-text(40, 36);
+}
+
+h3 {
+    @include fluid-text(30, 26);
+
+    text-align: center;
+}
+
+h4 {
+    @include fluid-text(26, 22);
+}

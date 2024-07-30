@@ -1,0 +1,86 @@
+.soc1als {
+    --colorOpasity: 0.6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__text {
+        font-size: 30px;
+        line-height: 1.5;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+    &__phone {
+        padding-bottom: 10px;
+        color: var(--color-brown);
+
+        @include hover {
+            color: var(--color-orange);
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+
+        @include mobile {
+            column-gap: 5px;
+        }
+    }
+
+    &__link {
+
+        @include flex-center(true);
+        @include square(100px);
+
+        color: var(--color-dark);
+        border-radius: 50%;
+
+        @include mobile {
+            @include square(80px);
+        }
+
+        &--whatsapp {
+            color: var(--color-whatsapp);
+
+            @include hover {
+                opacity: var(--colorOpasity);
+            }
+        }
+
+        &--viber {
+            color: var(--color-viber);
+
+            @include hover {
+                opacity: var(--colorOpasity);
+            }
+        }
+
+        &--telegram {
+            color: var(--color-telegram);
+
+            @include hover {
+                opacity: var(--colorOpasity);
+            }
+        }
+
+        &--vk {
+            color: var(--color-vk);
+
+            @include hover {
+                opacity: var(--colorOpasity);
+            }
+        }
+
+        svg {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}

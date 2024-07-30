@@ -1,0 +1,78 @@
+@mixin fluid-text($max: 48, $min: 16) {
+    font-size: clamp(#{$min}px, #{$max / 1280 * 100}vw, #{$max}px);
+}
+
+@mixin reset-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+@mixin flex-center($isInline: false) {
+    @if $isInline {
+        display: inline-flex;
+    }
+
+    @else {
+        display: flex;
+    }
+
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin square($size) {
+    width: $size;
+    aspect-ratio: 1;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+@mixin bg-square {
+    background-color: var(--color-square);
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: 0px 5px 5px -6px rgba(142, 121, 216, 0.6);
+    -moz-box-shadow: 0px 5px 5px -6px rgba(142, 121, 216, 0.6);
+    box-shadow: 0px 5px 5px -6px rgba(142, 121, 216, 0.6);
+
+
+}
+
+@mixin bg-square-hover{
+    &:hover {
+        -webkit-box-shadow: 0px 5px 10px 6px rgba(142, 121, 216, 0.2);
+        -moz-box-shadow: 0px 5px 10px 6px rgba(142, 121, 216, 0.2);
+        box-shadow: 0px 5px 10px 6px rgba(142, 121, 216, 0.2);
+    }
+}
+
+
+
+@mixin stroke($color: var(--color-brown), $size: 1px) {
+    text-shadow: -#{$size} -#{$size} 0 $color,
+    0 -#{$size} 0 $color,
+    #{$size} -#{$size} 0 $color,
+    #{$size} 0 0 $color,
+    #{$size} #{$size} 0 $color,
+    0 #{$size} 0 $color,
+    -#{$size} #{$size} 0 $color,
+    -#{$size} 0 0 $color;
+}

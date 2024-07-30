@@ -1,0 +1,142 @@
+.price {
+    &__item {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        padding-bottom: 50px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+    }
+
+    &__card {
+        @include bg-square;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        row-gap: 30px;
+        padding: 15px;
+
+
+        @include tablet {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+
+    &__service {
+        text-align: left;
+
+        @include tablet {
+            display: none;
+        }
+
+
+        &-list {
+            padding-inline: 15px;
+            padding-block: 15px;
+            list-style: inside;
+        }
+    }
+
+    &__over {
+        display: block;
+        text-align: center;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__block {
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        border-radius: var(--border-radius);
+
+        @include mobile {
+            max-height: 400px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__inventory {
+        display: none;
+        padding-bottom: var(--padding-bottom);
+
+        @include tablet {
+            display: block;
+        }
+
+        &-list {
+            @include bg-square;
+
+            padding-inline: 30px;
+            padding-block: 15px;
+            list-style: inside;
+
+            @include tablet {
+                padding-inline: 20px;
+            }
+        }
+
+        &-item:not(:last-child) {
+            padding-bottom: 10px;
+        }
+
+        &-image {
+            max-width: 400px;
+            height: auto;
+        }
+    }
+
+    &__abonement {
+        &-wrapper {
+            @include bg-square;
+
+            padding-inline: 30px;
+            padding-block: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: start;
+                padding-inline: 20px;
+            }
+        }
+
+        &-inner:not(:last-child) {
+            padding-bottom: 15px;
+        }
+
+        &-list {
+            &--style {
+                list-style: inside;
+            }
+        }
+
+        &-list ul {
+
+            list-style: inside;
+        }
+
+        &-item:not(:last-child) {
+            padding-bottom: 10px;
+        }
+
+    }
+
+}

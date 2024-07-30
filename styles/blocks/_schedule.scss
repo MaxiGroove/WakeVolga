@@ -1,0 +1,47 @@
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: var(--color-brown);
+
+        :hover {
+            color: var(--color-orange);
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    &__table {
+        display: none;
+        width: 100%;
+        height: 60vh;
+        border-radius: 7px;
+        border: none;
+
+        @include mobile-above {
+            display: block;
+        }
+    }
+
+    &__button {
+        @include reset-button;
+        @include bg-square;
+        @include bg-square-hover;
+        
+        display: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        @include mobile-above {
+            display: block;
+        }
+    }
+}

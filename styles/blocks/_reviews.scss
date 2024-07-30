@@ -1,0 +1,94 @@
+.reviews {
+    position: relative;
+
+    &__body {
+        padding-bottom: 30px;
+    }
+
+    &__arrow-button {
+        @include reset-button;
+        @include flex-center;
+        @include square(50px);
+
+        background-color: var(--color-light);
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+        &:first-child {
+            left: -15px;
+        }
+
+        &:last-child {
+            right: -15px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        gap: 16px;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &--no-transition {
+            scroll-behavior: auto;
+        }
+
+        &--dragging {
+            scroll-snap-type: none;
+            scroll-behavior: auto;
+        }
+
+        @include tablet {
+            grid-auto-columns: calc((100% / 2) - 12px);
+        }
+
+        @include mobile {
+            grid-auto-columns: 100%;
+        }
+    }
+
+    &__item {
+        @include flex-center;
+        @include bg-square;
+
+        scroll-snap-align: start;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px;
+        height: auto;
+        cursor: pointer;
+        user-select: none;
+
+        text-align: justify;
+    }
+
+    &__image {
+        width: 140px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--color-dark);
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 1.56rem;
+        margin: 30px 0 10px;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+    --color-bg: #9e94c2;
+    --color-square: #ffffff67;
+    --color-light: #ffffffcb;
+    --color-white: #ffffff;
+    --color-dark: #000000;
+    --color-green: #4ea5d883;
+    --color-whatsapp: #43d854;
+    --color-viber: #7360f2;
+    --color-telegram: #27a7e7;
+    --color-orange: #ee7c58;
+    --color-brown: #501b35;
+    --color-vk: #0077ff;
+
+
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-navigation: 'Montserrat';
+    --font-family-slogan: 'Lobster';
+    --font-family-title: 'Poiret One';
+
+    --border: 1px solid var(--color-dark);
+    --border-radius: 15px;
+
+    --container-width: 1240px;
+    --container-padding-x: 30px;
+
+    --section-padding-y: 50px;
+
+    --padding-bottom: 40px;
+
+    --transition-duration: 0.2s;
+
+}

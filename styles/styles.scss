@@ -1,0 +1,16 @@
+@import 'normalize', 'fonts', 'mixins', 'media', 'variables', 'utils', 'globals';
+
+@import 'blocks/button',
+        'blocks/burger-button',
+        'blocks/header',
+        'blocks/mobile-overlay',
+        'blocks/section',
+        'blocks/intro',
+        'blocks/about-us',
+        'blocks/gallery',
+        'blocks/reviews',
+        'blocks/schedule',
+        // 'blocks/table',
+        'blocks/price',
+        'blocks/location',
+        'blocks/soc1als';

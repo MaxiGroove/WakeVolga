@@ -1,0 +1,39 @@
+.section {
+    padding-block: var(--section-padding-y);
+
+    @include mobile {
+        padding-block: 25px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 40px;
+    }
+
+    &__title {
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include mobile {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__text {
+        @include bg-square;
+
+        font-size: 20px;
+        text-align: justify;
+        padding-inline: 30px;
+        padding-block: 15px;
+        margin-bottom: 50px;
+
+        @include mobile {
+            padding-inline: 20px;
+        }
+
+    }
+}

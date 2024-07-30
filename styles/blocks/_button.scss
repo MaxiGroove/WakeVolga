@@ -1,0 +1,23 @@
+.button {
+    @include flex-center(true);
+
+    background-color: var(--color-light);
+    border: none;
+    // border-radius: 50%;
+}
+
+.button-wrapper {
+    @include flex-center;
+}
+
+.button-up {
+    @include square(50px);
+    cursor: pointer;
+    rotate: (-90deg);
+    margin-bottom: 50px;
+    border-radius: 50%;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
